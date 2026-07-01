@@ -49,7 +49,7 @@ It’s the Nintendo 64, after all. You’re going to make a 3D game, or *fail tr
 
 Stop for a moment and think, “Are 2D games inferior to 3D games?” No, you don’t feel that way. You can list a ton of 2D games that you love. So, why not make a 2D game for the Nintendo 64?
 
-3D games are more difficult to make than 2D games, especially on the Nintendo 64. The Nintendo 64 has a very low-level interface for 3D graphics. There’s no such thing as a “camera”, “model”, or “scene” as far as the Nintendo 64 is concerned. Instead, you do all the matrix math yourself and create a list of commands like “draw these triangles on the screen” or “transform these vertices, and store the results in the vertex cache.” In 3D, you’ll also have to figure out how to convert models from your 3D modeling program into a format that works on the N64—there’s not really a standard way to do that.
+3D games are more difficult to make than 2D games, especially on the Nintendo 64. The Nintendo 64 has a very low-level interface for 3D graphics. There’s no such thing as a “camera”, “model”, or “scene” as far as the Nintendo 64 is concerned. Instead, you do all the matrix math yourself.
 
 If you are unsure about your matrix math, consider 2D.
 
@@ -67,7 +67,7 @@ You can find people to work with on the [N64Brew Discord server](https://discord
 
 ![A Nintendo 64 console hooked up to an old TV which displays the word, “ERROR”.](media/n64_tv_error.png)
 
-Nintendo 64 emulators are not accurate. Some are more accurate than others, but it is still common to see code run correctly on an emulator and fail on real hardware. The more time you spend between tests on hardware, the harder it is to debug problems.
+Nintendo 64 emulators are not accurate. Some are more accurate than others, but it is still possible to see code run correctly on an emulator and fail on real hardware. The more time you spend between tests on hardware, the harder it is to debug problems.
 
 **Solution:** Get a Nintendo 64 and a flashcart with USB, like the [SummerCart64](https://summercart64.dev/) or [EverDrive 64 X7](https://krikzz.com/store/home/55-everdrive-64-x7.html). Note that the X5 doesn’t have USB! It may be expensive but it will save you an enormous amount of time.
 
@@ -81,27 +81,7 @@ Find a way to speed up the debugging process. Test your game on both real hardwa
 
 You might consider making a PC version of your game in parallel, but this is easier said than done.
 
-## #6: Asset Importing Woes
-
-![A pipeline with three steps: a bunny like the Stanford Bunny, an unknown second step, and results on the Nintendo 64.](media/assets_pipeline.png)
-
-Let’s review some of the types of assets you might want in your Nintendo 64 game:
-
-- Textures for 3D models, with mipmaps.
-- 2D sprites and images.
-- Fonts.
-- 3D models, with animations.
-- Sound effects.
-- Music tracks.
-- Levels for your game.
-
-There is a hodgepodge of different asset conversion tools for Nintendo 64, and a collection of sample code for using all of these types of assets. But there’s never a clear way to use any type of asset, and the typical recommendation is to just “figure it out.” If you try using an existing tool, there’s a good chance that it’s poorly documented, incomplete, or abandoned. It may be hard to use without contacting the author or making your own fork of the tool and diving in to the tool’s code.
-
-Some of the assets, like textures and sprites, are manageable. You can write your own conversion tools for textures easily enough. Other assets are much more difficult to work with. The best known sound tools were shipped with the original SDK, which means running a Windows XP VM, using WINE, or using Qemu with an IRIX emulation layer. 3D model conversion is even worse, and forget about animations.
-
-**Project ideas:** What I’d like to see is a collection of “blessed” recipes for using different types of assets. This would mean writing a conversion tool, sample code, and explanations for how to tool into a build system.
-
-## #7: Miscellaneous Technical Challenges
+## #6: Miscellaneous Technical Challenges
 
 Fact is, there are tons of other technical challenges that come up during Nintendo 64 development. Some challenges you may encounter are:
 
