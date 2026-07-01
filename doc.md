@@ -5,7 +5,7 @@ https://www.moria.us/blog/2021/07/9-reasons-why-nintendo-64-homebrew-projects-fa
 
 Maybe you want to make a homebrew game for Nintendo 64. Heads up! Here are the nine reasons why your project might fail.
 
-But fist, let’s talk about what a project failure looks like.
+But first, let’s talk about what a project failure looks like.
 
 ## Anatomy of Project Failure
 
@@ -23,7 +23,7 @@ This feeling doesn’t last forever…
 
 A while later, you’ve been fighting against bugs in your project for too long—bugs that drive you mad, bugs that force you to comb through the source code over and over again. It’s frustrating; it’s demoralizing. You haven’t been able to release a complete game yet. You’ve spent countless hours getting asset pipelines working, and you’ve made significant cuts to your vision for the game.
 
-Maybe all those problems are too much. It’s not fun any more. You want your life back. You quit. Your project has succumbed to **attrition**.
+Maybe all those problems are too much. It’s not fun anymore. You want your life back. You quit. Your project has succumbed to **attrition**.
 
 If you can manage to avoid these problems or solve them early on, your project is more likely to succeed. If the homebrew community can solve some of these problems “once and for all,” we’ll see more homebrew games, and we’ll be able to welcome more people into the homebrew community.
 
@@ -49,7 +49,7 @@ It’s the Nintendo 64, after all. You’re going to make a 3D game, or *fail tr
 
 Stop for a moment and think, “Are 2D games inferior to 3D games?” No, you don’t feel that way. You can list a ton of 2D games that you love. So, why not make a 2D game for the Nintendo 64?
 
-3D games are more difficult to make than 2D games, especially on the Nintendo 64. The Nintendo 64 has a very low-level interface for 3D graphics. There’s no such thing as a “camera”, “model”, or “scene” as far as the Nintendo 64 is concerned. Instead, you do all the matrix math yourself and create a list of commands like “draw these triangles on the screen” or “transform these vertexes, and store the results in the vertex cache.” In 3D, you’ll also have to figure out how to convert models from your 3D modeling program into a format that works on the N64—there’s not really a standard way to do that.
+3D games are more difficult to make than 2D games, especially on the Nintendo 64. The Nintendo 64 has a very low-level interface for 3D graphics. There’s no such thing as a “camera”, “model”, or “scene” as far as the Nintendo 64 is concerned. Instead, you do all the matrix math yourself and create a list of commands like “draw these triangles on the screen” or “transform these vertices, and store the results in the vertex cache.” In 3D, you’ll also have to figure out how to convert models from your 3D modeling program into a format that works on the N64—there’s not really a standard way to do that.
 
 If you are unsure about your matrix math, consider 2D.
 
