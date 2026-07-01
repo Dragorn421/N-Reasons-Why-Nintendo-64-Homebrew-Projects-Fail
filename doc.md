@@ -88,7 +88,7 @@ Fact is, there are tons of other technical challenges that come up during Ninten
 - **Graphics performance:** It’s hard to get good performance out of the Nintendo 64.
 - **Understanding the RDP:** The RDP is a beast. It has a ton of different modes, some of which don’t do anything useful.
 - **Computer architecture:** You’re responsible for making sure variables are aligned and caches are flushed correctly.
-- **Working without the stdlib.** You can use C or C++, but you probably shouldn’t use `std::string`, `std::vector`, or even `malloc`.
+- **Working without the stdlib.** You can use C or C++, but you probably shouldn’t use `std::string`, `std::vector`.
 
 ## Do It Anyway!
 
