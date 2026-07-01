@@ -1,7 +1,7 @@
 Based on
 https://www.moria.us/blog/2021/07/9-reasons-why-nintendo-64-homebrew-projects-fail
 
-# 9 Reasons Why Nintendo 64 Homebrew Projects Fail
+# N Reasons Why Nintendo 64 Homebrew Projects Fail
 
 Maybe you want to make a homebrew game for Nintendo 64. Heads up! Here are the nine reasons why your project might fail.
 
@@ -63,31 +63,7 @@ The Nintendo 64 homebrew community is full of passionate, independent developers
 
 You can find people to work with on the [N64Brew Discord server](https://discord.gg/WqFgNWf).
 
-## #4: Bad Build System
-
-Take a look at a makefile, for a moment.
-
-```makefile
-# Rebuild when headers change
--include $(wildcard *.d)
-DEPFLAGS = -MF $(patsubst %.o,%.d,$@) -MMD -MP
-
-# Enable warnings
-WARNING_FLAGS = -Wall -Wextra
-
-BASE_CXXFLAGS = -O0 -g -std=c++11
-CXXFLAGS = $(BASE_CXXFLAGS) $(WARNING_FLAGS) $(DEPFLAGS)
-```
-
-A lot of the resources for N64 programming use Make as the build system. Make is from the *1970s* and is missing most of the features we take for granted. It’s easy to make an incorrect build using Make. Once you have an incorrect build, you could waste hours of time chasing after problems in your program that don’t exist in correct builds.
-
-**Non-solution:** “You can use Make if you know what you’re doing.”
-
-You’re human. You will make mistakes. Simple mistakes in your makefile, or simple mistakes in how you run Make, will result in incorrect builds.
-
-**Solution:** Use a better build system. I used [Bazel](https://bazel.build/), although the learning curve for cross-compilation on Bazel is fairly steep.
-
-## #5: Not Enough Testing on Hardware
+## #4: Not Enough Testing on Hardware
 
 ![A Nintendo 64 console hooked up to an old TV which displays the word, “ERROR”.](media/n64_tv_error.png)
 
@@ -97,15 +73,7 @@ Nintendo 64 emulators are not accurate. Some are more accurate than others, but 
 
 **Project idea:** It would be nice to have a cheaper development cartridge. The cartridge could be USB-only, with only the features needed for development.
 
-## #6: The One-Megabyte Barrier
-
-The bootloader on the Nintendo 64 (called IPL3) loads one megabyte of cartridge data into RAM before your program starts. If the core of your program ever gets larger than one megabyte, it’s not the end of the world. You can move data to other parts of the cartridge, or even figure out a way to load a program larger than a megabyte.
-
-However, if you’re blindsided by this limitation, you may need to redesign parts of your game just to get it to work, and you may be forced to make these changes at the most inconvenient time.
-
-**Solution:** From early on in the project, keep assets out of your code, or plan to keep your entire game under one megabyte.
-
-## #7: Slow, Difficult Iteration
+## #5: Slow, Difficult Iteration
 
 You test your game on hardware? That’s slow and painful. When your game crashes, the console might just freeze, or you might get a black screen. How do you debug it? You’ll be testing new changes and debugging your game fairly often. If you have to swap SD cards to test your game, or worse, if you have to post your game on the #rom-testing channel over and over again, your progress will be slow.
 
@@ -113,7 +81,7 @@ Find a way to speed up the debugging process. Test your game on both real hardwa
 
 You might consider making a PC version of your game in parallel, but this is easier said than done.
 
-## #8: Asset Importing Woes
+## #6: Asset Importing Woes
 
 ![A pipeline with three steps: a bunny like the Stanford Bunny, an unknown second step, and results on the Nintendo 64.](media/assets_pipeline.png)
 
@@ -133,7 +101,7 @@ Some of the assets, like textures and sprites, are manageable. You can write you
 
 **Project ideas:** What I’d like to see is a collection of “blessed” recipes for using different types of assets. This would mean writing a conversion tool, sample code, and explanations for how to tool into a build system.
 
-## #9: Miscellaneous Technical Challenges
+## #7: Miscellaneous Technical Challenges
 
 Fact is, there are tons of other technical challenges that come up during Nintendo 64 development. Some challenges you may encounter are:
 
