@@ -69,7 +69,7 @@ You can find people to work with on the [N64Brew Discord server](https://discord
 
 Nintendo 64 emulators are not accurate. Some are more accurate than others, but it is still common to see code run correctly on an emulator and fail on real hardware. The more time you spend between tests on hardware, the harder it is to debug problems.
 
-**Solution:** Get a Nintendo 64 and a flashcart with USB, like the [EverDrive 64 X7](https://krikzz.com/store/home/55-everdrive-64-x7.html). Note that the X5 doesn’t have USB! The X7 is expensive (USD $250) but it will save you an enormous amount of time.
+**Solution:** Get a Nintendo 64 and a flashcart with USB, like the [SummerCart64](https://summercart64.dev/) or [EverDrive 64 X7](https://krikzz.com/store/home/55-everdrive-64-x7.html). Note that the X5 doesn’t have USB! It may be expensive but it will save you an enormous amount of time.
 
 **Project idea:** It would be nice to have a cheaper development cartridge. The cartridge could be USB-only, with only the features needed for development.
 
@@ -77,7 +77,7 @@ Nintendo 64 emulators are not accurate. Some are more accurate than others, but 
 
 You test your game on hardware? That’s slow and painful. When your game crashes, the console might just freeze, or you might get a black screen. How do you debug it? You’ll be testing new changes and debugging your game fairly often. If you have to swap SD cards to test your game, or worse, if you have to post your game on the #rom-testing channel over and over again, your progress will be slow.
 
-Find a way to speed up the debugging process. Test your game on both real hardware and emulators. Use one of the more accurate emulators, like MAME. CEN64 is a bit less accurate, and Mupen64+ and Project64 just aren’t accurate enough for anything but the most basic testing.
+Find a way to speed up the debugging process. Test your game on both real hardware and emulators. Use one of the more accurate emulators, like [ares](https://ares-emu.net/) (preferably with its Homebrew Development Mode on) or [gopher64](https://loganmc10.itch.io/gopher64). Other emulators including MAME, CEN64, Mupen64+ and Project64 just aren’t accurate enough.
 
 You might consider making a PC version of your game in parallel, but this is easier said than done.
 
@@ -106,7 +106,6 @@ Some of the assets, like textures and sprites, are manageable. You can write you
 Fact is, there are tons of other technical challenges that come up during Nintendo 64 development. Some challenges you may encounter are:
 
 - **Graphics performance:** It’s hard to get good performance out of the Nintendo 64.
-- **Writing linker scripts:** You may have to make changes to your linker scripts.
 - **Understanding the RDP:** The RDP is a beast. It has a ton of different modes, some of which don’t do anything useful.
 - **Computer architecture:** You’re responsible for making sure variables are aligned and caches are flushed correctly.
 - **Working without the stdlib.** You can use C or C++, but you probably shouldn’t use `std::string`, `std::vector`, or even `malloc`.
