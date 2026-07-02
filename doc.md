@@ -67,7 +67,7 @@ You can find people to work with on the [N64Brew Discord server](https://discord
 
 ![A Nintendo 64 console hooked up to an old TV which displays the word, “ERROR”.](media/n64_tv_error.png)
 
-Nintendo 64 emulators are not accurate. Some are more accurate than others, but it is still possible to see code run correctly on an emulator and fail on real hardware. The more time you spend between tests on hardware, the harder it is to debug problems.
+Even the most accurate Nintendo 64 emulators are not fully accurate. In particular RDP timings are not implemented, so lag due to rendering cannot be gauged from testing on emulator. The more time you spend between tests on hardware, the harder it is to debug problems.
 
 **Solution:** Get a Nintendo 64 and a flashcart with USB, like the [SummerCart64](https://summercart64.dev/) or [EverDrive 64 X7](https://krikzz.com/store/home/55-everdrive-64-x7.html). Note that the X5 doesn’t have USB! It may be expensive but it will save you an enormous amount of time.
 
