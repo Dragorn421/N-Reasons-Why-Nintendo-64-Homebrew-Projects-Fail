@@ -71,8 +71,6 @@ Even the most accurate Nintendo 64 emulators are not fully accurate. In particul
 
 **Solution:** Get a Nintendo 64 and a flashcart with USB, like the [SummerCart64](https://summercart64.dev/) or [EverDrive 64 X7](https://krikzz.com/store/home/55-everdrive-64-x7.html). Note that the X5 doesn’t have USB! It may be expensive but it will save you an enormous amount of time.
 
-**Project idea:** It would be nice to have a cheaper development cartridge. The cartridge could be USB-only, with only the features needed for development.
-
 ## #5: Slow, Difficult Iteration
 
 You test your game on hardware? That’s slow and painful. When your game crashes, the console might just freeze, or you might get a black screen. How do you debug it? You’ll be testing new changes and debugging your game fairly often. If you have to swap SD cards to test your game, or worse, if you have to post your game on the #rom-testing channel over and over again, your progress will be slow.
