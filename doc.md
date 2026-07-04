@@ -3,7 +3,7 @@ Based on
 
 # N Reasons Why Nintendo 64 Homebrew Projects Fail
 
-Maybe you want to make a homebrew game for Nintendo 64. Heads up! Here are the nine reasons why your project might fail.
+Maybe you want to make a homebrew game for Nintendo 64. Heads up! Here are some reasons why your project might fail.
 
 But first, let’s talk about what a project failure looks like.
 
